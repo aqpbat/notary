@@ -44,7 +44,7 @@ function devStyles(){
     ]))
     .pipe(concat({ path: 'style.css'}))
     .pipe(autoprefixer({
-      browsers: ['last 99 versions'],
+      overrideBrowserlist: ['last 2 versions'],
       cascade: false
     }))
     .pipe(dest(options.paths.dist.css));
