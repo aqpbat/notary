@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Нотариус г. Алматы</title>
 </head>
+
 <body>
-    <h1 class="text-red-600">hello motherfucker</h1>
+    <header class="pt-2">
+        <div class="container m-auto">
+            <nav>
+                <ul class="m-auto flex justify-center place-items-center md:hidden">
+                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+                        <a href="#" class="text-lg lg:text-base">О нас</a>
+                    </li>
+                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+                        <a href="#" class="text-lg lg:text-base">Виды услуг</a>
+                    </li>
+                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+                        <a href="#" class="text-lg lg:text-base">
+                            <img src="./img/logo.svg" alt="logotype notary" class="h-24 w-24 m-auto lg:h-20 lg:w-20">
+                        </a>
+                    </li> <!-- logo -->
+                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+                        <a href="#" class="text-lg lg:text-base">Вопросы</a>
+                    </li>
+                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+                        <a href="#" class="text-lg lg:text-base">Контакты</a>
+                    </li>
+                </ul>
+
+                <div id="mobileHeader" class="hidden flex flex-col justify-center place-items-center md:block">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="logotype notary" class="m-auto h-20 w-20">
+                    </a>
+                    <ul id="mobileMenu" class="m-auto flex-col justify-center place-items-center hidden">
+                        <li>
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Виды услуг
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- id=menu mobile menu -->
+            </nav>
+        </div> <!-- container -->
+    </header>
+
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>

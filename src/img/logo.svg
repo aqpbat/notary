@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1300 998.065" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="601.1" y1="408" x2="701.8" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0dbab"/>
+      <stop offset="0.7" stop-color="#ebc17a"/>
+      <stop offset="1" stop-color="#ca984c"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="628.7" y1="349.2" x2="674.2" y2="349.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0dbab"/>
+      <stop offset="0.6" stop-color="#ca984c"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="617.7" y1="314.2" x2="685.2" y2="314.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0dbab"/>
+      <stop offset="1" stop-color="#ebc17a"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="617.8" y1="291.1" x2="685.1" y2="291.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0dbab"/>
+      <stop offset="1" stop-color="#edd187"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="321.8" y1="579.1" x2="522.1" y2="579.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0dbab"/>
+      <stop offset="0.7" stop-color="#ebc17a"/>
+      <stop offset="1" stop-color="#ca984c"/>
+    </linearGradient>
+    <linearGradient id="g6" x1="777.9" y1="579.1" x2="978.2" y2="579.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0dbab"/>
+      <stop offset="0.7" stop-color="#ebc17a"/>
+      <stop offset="1" stop-color="#ca984c"/>
+    </linearGradient>
+    <linearGradient id="g7" x1="421.9" y1="357.8" x2="650" y2="357.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebc17a"/>
+      <stop offset="1" stop-color="#f0dbab"/>
+    </linearGradient>
+    <linearGradient id="g8" x1="650" y1="357.8" x2="878.1" y2="357.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebc17a"/>
+      <stop offset="1" stop-color="#f0dbab"/>
+    </linearGradient>
+    <style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: #ebc17d } 
+		.s2 { fill: #ca974d } 
+		.s3 { fill: url(#g2) } 
+		.s4 { fill: url(#g3) } 
+		.s5 { fill: url(#g4) } 
+		.s6 { fill: url(#g5) } 
+		.s7 { fill: #f0daac } 
+		.s8 { fill: url(#g6) } 
+		.s9 { fill: url(#g7) } 
+		.s10 { fill: url(#g8) } 
+	</style>
+  </defs>
+  <g id="Layer 1" transform="matrix(1.902712, 0, 0, 1.902712, -588.234741, -528.778564)" style="">
+    <g id="&lt;Group&gt;">
+      <g id="&lt;Group&gt;">
+        <path id="&lt;Path&gt;" class="s0" d="m611.1 732.2c-13.7-27.2-14-57.7-9-86.8 5.1-29.1 14-68.6 20.6-97.5 6.6-29 9.5-47.7 0.2-76.1-3.5-10.5-7.4-20.4-9.6-31.1-2.2-10.7-1.1-21.7 6.8-30.7h62.7c7.9 9 8.9 20 6.7 30.7-2.2 10.7-6.1 20.3-9.5 30.7-9.4 28.5-6.4 47.4 0.2 76.3 6.6 28.9 15.5 68.5 20.6 97.6 5 29.1 4.7 59.7-9.1 86.9z"/>
+        <g id="&lt;Group&gt;">
+          <path id="&lt;Path&gt;" class="s1" d="m740.2 748h-177.5l12.7-16.8h152.1z"/>
+          <path id="&lt;Path&gt;" class="s2" d="m726.2 766.1h-149.5v-18.1h149.5z"/>
+          <path id="&lt;Path&gt;" class="s1" d="m756.6 783.2h-210.3l12.6-18.1h185.1z"/>
+        </g>
+        <g id="&lt;Group&gt;">
+          <path id="&lt;Path&gt;" class="s3" d="m674.2 384.2h-45.5v-33h45.5z"/>
+          <path id="&lt;Path&gt;" class="s4" d="m685.2 352.2h-67.5l10-36h47.5z"/>
+          <path id="&lt;Path&gt;" class="s5" d="m685.1 304.9c0 6.5-5.3 11.7-11.8 11.7h-43.8c-6.5 0-11.7-5.2-11.7-11.7 0-6.5 5.2-11.8 11.7-11.8h43.8c6.5 0 11.8 5.3 11.8 11.8z"/>
+        </g>
+        <g id="&lt;Group&gt;">
+          <path id="&lt;Path&gt;" class="s6" d="m486.6 634.2h-129.3l-35.5-53.1h200.3z"/>
+          <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s7" d="m522.1 582h-200.3l100.1-171.9zm-184.2-10h168.2l-84.1-144.3z"/>
+          <path id="&lt;Path&gt;" class="s1" d="m475.6 646.2h-107.3v-12.3h107.3z"/>
+        </g>
+        <g id="&lt;Group&gt;">
+          <path id="&lt;Path&gt;" class="s8" d="m942.7 634.2h-129.3l-35.5-53.1h200.3z"/>
+          <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s1" d="m978.2 582h-200.3l100.2-171.9zm-184.3-10h168.2l-84.1-144.3z"/>
+          <path id="&lt;Path&gt;" class="s1" d="m931.7 646.2h-107.3v-12.3h107.3z"/>
+        </g>
+        <g id="&lt;Group&gt;">
+          <path id="&lt;Path&gt;" class="s9" d="m421.9 409.2c127.8 0 228.1-49.9 228.1-49.9v50.4c-74.3 32.4-228.1-0.5-228.1-0.5z"/>
+          <path id="&lt;Path&gt;" class="s10" d="m650 409.7v-50.4c0 0 100.3 49.9 228.1 49.9 0 0-153.8 32.9-228.1 0.5z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
