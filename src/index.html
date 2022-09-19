@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="pt-2">
+    <header class="pt-2 font-semibold">
         <div class="container m-auto">
             <nav>
                 <ul class="m-auto flex justify-center place-items-center md:hidden">
@@ -37,26 +37,35 @@
                 </ul>
 
                 <div id="mobileHeader" class="hidden flex flex-col justify-center place-items-center md:block">
-                    <a href="#">
-                        <img src="./img/logo.svg" alt="logotype notary" class="m-auto h-20 w-20">
-                    </a>
+                    <div class="flex flex-row justify-between place-items-center">
+                        <a href="#">
+                            <img src="./img/logo.svg" alt="logotype notary" class="m-auto h-20 w-20">
+                        </a>
+
+                        <button id="menuShowButton" class="burger hidden md:block">
+                            <span class="burger-line top-line"></span>
+                            <span class="burger-line mid-line"></span>
+                            <span class="burger-line bottom-line"></span>
+                        </button>
+                    </div>
+
                     <ul id="mobileMenu" class="m-auto flex-col justify-center place-items-center hidden">
-                        <li>
+                        <li class="py-4">
                             <a href="#">
                                 О нас
                             </a>
                         </li>
-                        <li>
+                        <li class="py-4">
                             <a href="#">
                                 Виды услуг
                             </a>
                         </li>
-                        <li>
+                        <li class="py-4">
                             <a href="#">
                                 Вопросы
                             </a>
                         </li>
-                        <li>
+                        <li class="py-4">
                             <a href="#">
                                 Контакты
                             </a>
@@ -66,6 +75,14 @@
             </nav>
         </div> <!-- container -->
     </header>
+
+    <section id="heroBlock">
+        <div class="container m-auto">
+            <div class="h-[539px]">
+
+            </div>
+        </div>
+    </section>
 
     <script src="./js/scripts.js"></script>
 </body>
