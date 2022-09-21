@@ -10,6 +10,7 @@ module.exports = {
       'sm': {'max': '480px'}
     },
     container: {
+      maxWidth: '1000px',
       padding: '20px',
       center: true,
     },
