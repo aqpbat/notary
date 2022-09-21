@@ -9,40 +9,39 @@
     background: #EBC369;
     transition: .3s all ease;
   }
-}
+  &.active>.top-line {
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s all ease;
+  }
+  
+  &.active>.mid-line {
+    opacity: 0;
+    transition: .3s all ease;
+  }
+  
+  &.active>.bottom-line {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: .3s all ease;
+  }
 
-.top-line {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.mid-line {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.bottom-line {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.burger.active>.top-line {
-  transform: translateY(8px) rotate(45deg);
-  transition: .3s all ease;
-}
-
-.burger.active>.mid-line {
-  opacity: 0;
-  transition: .3s all ease;
-}
-
-.burger.active>.bottom-line {
-  transform: translateY(-10px) rotate(-45deg);
-  transition: .3s all ease;
+  .top-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .mid-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 #heroBlock {
