@@ -45,5 +45,10 @@
 }
 
 #heroBlock {
-  background: url('../img/intro-background.jpg') center center/cover no-repeat;
+  background: url('../img/intro_bg.png') center/cover no-repeat;
+  background-position: 60% 40%;
+}
+
+#aboutUsImage {
+  background: url('../img/about-us.jpg') center center/cover no-repeat;
 }
