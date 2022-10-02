@@ -52,3 +52,132 @@
 #aboutUsImage {
   background: url('../img/about-us.jpg') center center/cover no-repeat;
 }
+
+#rightsModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+#dealsModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+#estateModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+#familyModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+#securityModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+#translateModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+
+
