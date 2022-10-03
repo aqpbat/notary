@@ -2,441 +2,485 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Нотариус г. Алматы</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Нотариус г. Алматы</title>
 </head>
 
 <body>
-    <header class="font-semibold">
-        <div class="container max-w-[992px]">
-            <nav class="m-auto">
-                <ul class="m-auto flex justify-between place-items-center md:hidden">
-                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
-                        <a href="#" class="text-lg lg:text-base">О нас</a>
-                    </li>
-                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
-                        <a href="#" class="text-lg lg:text-base">Виды услуг</a>
-                    </li>
-                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
-                        <a href="#" class="text-lg lg:text-base">
-                            <img src="./img/logo.svg" alt="logotype notary" class="h-24 w-24 m-auto lg:h-20 lg:w-20">
-                        </a>
-                    </li> <!-- logo -->
-                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
-                        <a href="#" class="text-lg lg:text-base">Вопросы</a>
-                    </li>
-                    <li class="text-center m-0 leading-5 mx-8 lg:mx-4">
-                        <a href="#" class="text-lg lg:text-base">Контакты</a>
-                    </li>
-                </ul>
+	<header class="font-semibold">
+		<div class="container max-w-[992px]">
+			<nav class="m-auto">
+				<ul class="m-auto flex justify-between place-items-center md:hidden">
+					<li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+						<a href="#" class="text-lg lg:text-base">О нас</a>
+					</li>
+					<li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+						<a href="#" class="text-lg lg:text-base">Виды услуг</a>
+					</li>
+					<li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+						<a href="#" class="text-lg lg:text-base">
+							<img src="./img/logo.svg" alt="logotype notary" class="h-24 w-24 m-auto lg:h-20 lg:w-20">
+						</a>
+					</li> <!-- logo -->
+					<li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+						<a href="#" class="text-lg lg:text-base">Вопросы</a>
+					</li>
+					<li class="text-center m-0 leading-5 mx-8 lg:mx-4">
+						<a href="#" class="text-lg lg:text-base">Контакты</a>
+					</li>
+				</ul>
 
-                <div id="mobileHeader" class="hidden flex flex-col justify-center place-items-center md:block"> 
-                    <!-- TODO: Увеличить шрифт для мобилок -->
-                    <div class="flex flex-row justify-between place-items-center">
-                        <a href="#">
-                            <img src="./img/logo.svg" alt="logotype notary" class="m-auto h-20 w-20">
-                        </a>
+				<div id="mobileHeader" class="hidden flex flex-col justify-center place-items-center md:block">
+					<!-- TODO: Увеличить шрифт для мобилок -->
+					<div class="flex flex-row justify-between place-items-center">
+						<a href="#">
+							<img src="./img/logo.svg" alt="logotype notary" class="m-auto h-20 w-20">
+						</a>
 
-                        <button id="menuShowButton" class="burger hidden md:block">
-                            <span class="burger-line top-line"></span>
-                            <span class="burger-line mid-line"></span>
-                            <span class="burger-line bottom-line"></span>
-                        </button>
-                    </div>
+						<button id="menuShowButton" class="burger hidden md:block">
+							<span class="burger-line top-line"></span>
+							<span class="burger-line mid-line"></span>
+							<span class="burger-line bottom-line"></span>
+						</button>
+					</div>
 
-                    <ul id="mobileMenu" class="m-auto flex-col justify-center place-items-center hidden">
-                        <li class="py-4">
-                            <a href="#">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="py-4">
-                            <a href="#">
-                                Виды услуг
-                            </a>
-                        </li>
-                        <li class="py-4">
-                            <a href="#">
-                                Вопросы
-                            </a>
-                        </li>
-                        <li class="py-4">
-                            <a href="#">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </div> <!-- mobile menu -->
-            </nav>
-        </div> <!-- container -->
-    </header>
+					<ul id="mobileMenu" class="m-auto flex-col justify-center place-items-center hidden">
+						<li class="py-4">
+							<a href="#">
+								О нас
+							</a>
+						</li>
+						<li class="py-4">
+							<a href="#">
+								Виды услуг
+							</a>
+						</li>
+						<li class="py-4">
+							<a href="#">
+								Вопросы
+							</a>
+						</li>
+						<li class="py-4">
+							<a href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div> <!-- mobile menu -->
+			</nav>
+		</div> <!-- container -->
+	</header>
 
-    <section id="heroBlock" class="min-h-[539px]">
-        <div class="container max-w-[992px]">
-            <div class="min-h-[539px] flex flex-col justify-center m-auto">
-                <h1 class="font-bold text-5xl md:text-4xl sm:text-2xl w-[80%] text-[#c9c9c9] leading-tight">
-                    Нотариус с выездом по Алматы и области
-                </h1>
-                <p class="font-semibold text-lg pt-5 w-[600px] text-white md:w-[400px] sm:w-[100%] sm:text-base">
-                    Нотариус  всегда рад дать подробную консультацию по интересующему вопросу и оказать содействие в правильном оформлении документов.
-                </p>
-            </div> 
-        </div> <!-- container -->
-    </section> <!-- hero block -->
+	<section id="heroBlock" class="min-h-[539px]">
+		<div class="container max-w-[992px]">
+			<div class="min-h-[539px] flex flex-col justify-center m-auto">
+				<h1 class="font-bold text-5xl md:text-4xl sm:text-2xl w-[80%] text-[#c9c9c9] leading-tight">
+					Нотариус с выездом по Алматы и области
+				</h1>
+				<p class="font-semibold text-lg pt-5 w-[600px] text-white md:w-[400px] sm:w-[100%] sm:text-base">
+					Нотариус всегда рад дать подробную консультацию по интересующему вопросу и оказать содействие в правильном
+					оформлении документов.
+				</p>
+			</div>
+		</div> <!-- container -->
+	</section> <!-- hero block -->
 
-    <section id="aboutUsBlock">
-        <div class="container max-w-[992px] min-h-[539px] flex flex-row justify-between md:flex-col-reverse lg:flex-col-reverse">
-            <div id="aboutUsImage" class="mt-12 min-h-[451px] w-[450px] sm:w-[100%] sm:min-h-[300px] sm:mt-0 lg:w-[100%] lg:mt-0"></div>
-            <div class="flex flex-col justify-evenly w-[420px] lg:w-[95%] md:w-[95%] md:justify-evenly md:min-h-[480px] md:text-lg md:place-items-center md:m-auto lg:justify-center lg:place-items-center lg:m-auto lg:min-h-[460px] lg:text-xl sm:min-h-[580px]">
-                <div class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#EBC369] w-32 lg:text-3xl lg:w-24 lg:mb-6 lg:mt-4">
-                    О нас
-                </div>
-                <div class="w-[100%] md:text-base">
-                    Наш офис расположен в центре Алматы, поэтому вам будет удобно добираться до нас.
-                    <br>
-                    <br>
-                    Мы всегда идем навстречу нашим клиентам:
-                    <ul>
-                        <li>осуществляем выезд в офис или на дом (при условии предварительной записи);</li>
-                        <li>оплатить услуги нотариуса вы можете как наличными денежными средствами, так и банковской картой;</li>
-                        <li>дополнительно оказываем услуги перевода документов.</li>
-                    </ul>
-                </div>
-                <button class="w-36 h-12 bg-[#EBC369] text-base font-bold text-white hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4">
-                    Связаться
-                </button>
-            </div>
-        </div> <!-- container -->
-    </section> <!-- about us block -->
+	<section id="aboutUsBlock">
+		<div
+			class="container max-w-[992px] min-h-[539px] flex flex-row justify-between md:flex-col-reverse lg:flex-col-reverse">
+			<div id="aboutUsImage"
+				class="mt-12 min-h-[451px] w-[450px] sm:w-[100%] sm:min-h-[300px] sm:mt-0 lg:w-[100%] lg:mt-0"></div>
+			<div
+				class="flex flex-col justify-evenly w-[420px] lg:w-[95%] md:w-[95%] md:justify-evenly md:min-h-[480px] md:text-lg md:place-items-center md:m-auto lg:justify-center lg:place-items-center lg:m-auto lg:min-h-[460px] lg:text-xl sm:min-h-[580px]">
+				<div
+					class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#EBC369] w-32 lg:text-3xl lg:w-24 lg:mb-6 lg:mt-4">
+					О нас
+				</div>
+				<div class="w-[100%] md:text-base">
+					Наш офис расположен в центре Алматы, поэтому вам будет удобно добираться до нас.
+					<br>
+					<br>
+					Мы всегда идем навстречу нашим клиентам:
+					<ul>
+						<li>осуществляем выезд в офис или на дом (при условии предварительной записи);</li>
+						<li>оплатить услуги нотариуса вы можете как наличными денежными средствами, так и банковской картой;</li>
+						<li>дополнительно оказываем услуги перевода документов.</li>
+					</ul>
+				</div>
+				<button
+					class="w-36 h-12 bg-[#EBC369] text-base font-bold text-white hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4">
+					Связаться
+				</button>
+			</div>
+		</div> <!-- container -->
+	</section> <!-- about us block -->
 
-    <section id="servicesBlock">
-        <div class="container m-auto max-w-[992px] min-h-[539px]">
-            <div class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#EBC369] w-60 m-auto mt-12 lg:text-3xl lg:w-48 lg:mt-6">
-                Виды услуг
-            </div>
-            <div class="flex flex-wrap mt-4 justify-between place-content-center lg:flex-col">
+	<section id="servicesBlock">
+		<div class="container m-auto max-w-[992px] min-h-[539px]">
+			<div
+				class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#6991EB] w-60 m-auto mt-12 lg:text-3xl lg:w-48 lg:mt-6">
+				Виды услуг
+			</div>
+			<div class="flex flex-wrap mt-4 justify-between place-content-center lg:flex-col">
 
-                <div class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
-                    <div class="m-0 w-36 h-36 bg-[#EBC369] rounded-full relative">
-                        <img src="./img/icons/rights.png" alt="иконка доверенности" class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
-                    </div>
-                    <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
-                        <div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
-                            Доверенность и согласие
-                        </div>
-                        <div class="text-sm my-4 md:text-xs sm:text-center">
-                            Письменное уполномочие, выдаваемое одним лицом другому лицу для представительства перед третьими лицами в правоотношениях.
-                        </div> 
-                        <button id="rightsButton" class="w-32 h-12 bg-[#EBC369] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
-                            Подробнее
-                        </button>
-                    </div>
-                </div> <!-- item 1 -->
+				<div
+					class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+					<div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+						<img src="./img/icons/rights.png" alt="иконка доверенности"
+							class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+					</div>
+					<div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+						<div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+							Доверенность и согласие
+						</div>
+						<div class="text-sm my-4 md:text-xs sm:text-center">
+							Письменное уполномочие, выдаваемое одним лицом другому лицу для представительства перед третьими лицами в
+							правоотношениях.
+						</div>
+						<button id="rightsButton"
+							class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+							Подробнее
+						</button>
+					</div>
+				</div> <!-- item 1 -->
 
-                <div class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
-                    <div class="m-0 w-36 h-36 bg-[#EBC369] rounded-full relative">
-                        <img src="./img/icons/deal.png" alt="иконка сделки" class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
-                    </div>
-                    <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
-                        <div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
-                            Корпоративные сделки
-                        </div>
-                        <div class="text-sm my-4 md:text-xs sm:text-center">
-                            Действия граждан и юридических лиц, направленные на установление, изменение или прекращение гражданских прав и обязанностей.
-                        </div> 
-                        <button id="dealsButton" class="w-32 h-12 bg-[#EBC369] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
-                            Подробнее
-                        </button>
-                    </div>
-                </div> <!-- item 2 -->
+				<div
+					class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+					<div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+						<img src="./img/icons/deal.png" alt="иконка сделки"
+							class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+					</div>
+					<div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+						<div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+							Корпоративные сделки
+						</div>
+						<div class="text-sm my-4 md:text-xs sm:text-center">
+							Действия граждан и юридических лиц, направленные на установление, изменение или прекращение гражданских
+							прав и обязанностей.
+						</div>
+						<button id="dealsButton"
+							class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+							Подробнее
+						</button>
+					</div>
+				</div> <!-- item 2 -->
 
-                <div class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
-                    <div class="m-0 w-36 h-36 bg-[#EBC369] rounded-full relative">
-                        <img src="./img/icons/estate.png" alt="иконка недвижимости" class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
-                    </div>
-                    <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
-                        <div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
-                            Сделки с недвижимостью
-                        </div>
-                        <div class="text-sm my-4 md:text-xs sm:text-center">
-                            Действия граждан и юридических лиц, направленные на установление, изменение или прекращение гражданских прав и обязанностей в отношении объекта недвижимости.
-                        </div> 
-                        <button id="estateButton" class="w-32 h-12 bg-[#EBC369] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
-                            Подробнее
-                        </button>
-                    </div>
-                </div> <!-- item 3 -->
+				<div
+					class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+					<div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+						<img src="./img/icons/estate.png" alt="иконка недвижимости"
+							class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+					</div>
+					<div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+						<div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+							Сделки с недвижимостью
+						</div>
+						<div class="text-sm my-4 md:text-xs sm:text-center">
+							Действия граждан и юридических лиц, направленные на установление, изменение или прекращение гражданских
+							прав и обязанностей в отношении объекта недвижимости.
+						</div>
+						<button id="estateButton"
+							class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+							Подробнее
+						</button>
+					</div>
+				</div> <!-- item 3 -->
 
-                <div class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
-                    <div class="m-0 w-36 h-36 bg-[#EBC369] rounded-full relative">
-                        <img src="./img/icons/family.png" alt="иконка семьи" class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
-                    </div>
-                    <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
-                        <div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
-                            Брак и семья, наследство
-                        </div>
-                        <div class="text-sm my-4 md:text-xs sm:text-center">
-                            Процесс перехода прав и обязанностей умершего гражданина к другим лицам в порядке универсального правопреемства.
-                        </div> 
-                        <button id="familyButton" class="w-32 h-12 bg-[#EBC369] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
-                            Подробнее
-                        </button>
-                    </div>
-                </div> <!-- item 4 -->
+				<div
+					class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+					<div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+						<img src="./img/icons/family.png" alt="иконка семьи"
+							class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+					</div>
+					<div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+						<div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+							Брак и семья, наследство
+						</div>
+						<div class="text-sm my-4 md:text-xs sm:text-center">
+							Процесс перехода прав и обязанностей умершего гражданина к другим лицам в порядке универсального
+							правопреемства.
+						</div>
+						<button id="familyButton"
+							class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+							Подробнее
+						</button>
+					</div>
+				</div> <!-- item 4 -->
 
-                <div class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
-                    <div class="m-0 w-36 h-36 bg-[#EBC369] rounded-full relative">
-                        <img src="./img/icons/security.png" alt="иконка обеспечения доказательств" class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
-                    </div>
-                    <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
-                        <div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
-                            Обеспечения доказательств
-                        </div>
-                        <div class="text-sm my-4 md:text-xs sm:text-center">
-                            Особый способ их фиксирования, применяемый до исследования доказательств в судебном заседании, если есть основания опасаться, что их представление суду в дальнейшем станет невозможным или затруднительным.
-                        </div> 
-                        <button id="securityButton" class="w-32 h-12 bg-[#EBC369] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
-                            Подробнее
-                        </button>
-                    </div>
-                </div> <!-- item 5 -->
+				<div
+					class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+					<div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+						<img src="./img/icons/security.png" alt="иконка обеспечения доказательств"
+							class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+					</div>
+					<div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+						<div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+							Обеспечения доказательств
+						</div>
+						<div class="text-sm my-4 md:text-xs sm:text-center">
+							Особый способ их фиксирования, применяемый до исследования доказательств в судебном заседании, если есть
+							основания опасаться, что их представление суду в дальнейшем станет невозможным или затруднительным.
+						</div>
+						<button id="securityButton"
+							class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+							Подробнее
+						</button>
+					</div>
+				</div> <!-- item 5 -->
 
-                <div class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
-                    <div class="m-0 w-36 h-36 bg-[#EBC369] rounded-full relative">
-                        <img src="./img/icons/translate.png" alt="иконка перевода" class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
-                    </div>
-                    <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
-                        <div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
-                            Апостиль и нотариальные переводы
-                        </div>
-                        <div class="text-sm my-4 md:text-xs sm:text-center">
-                            Нотариальные переводы документов и апостилирование документов нотариусом.
-                        </div>
-                        <button id="translateButton" class="w-32 h-12 bg-[#EBC369] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
-                            Подробнее
-                        </button>
-                    </div>
-                </div>
+				<div
+					class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+					<div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+						<img src="./img/icons/translate.png" alt="иконка перевода"
+							class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+					</div>
+					<div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+						<div class="text-2xl font-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+							Апостиль и нотариальные переводы
+						</div>
+						<div class="text-sm my-4 md:text-xs sm:text-center">
+							Нотариальные переводы документов и апостилирование документов нотариусом.
+						</div>
+						<button id="translateButton"
+							class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+							Подробнее
+						</button>
+					</div>
+				</div>
 
-                <!-- ! Modal Window -->
+				<!-- ! Modal Window -->
 
-                <div id="rightsModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-                    <div class="min-h-full flex items-center justify-center px-3 py-8">
-                        <div class="bg-white text-black p-8 relative w-[90%]">
-                            <button id="rightsModalClose" class="absolute top-3 right-3 closeModal">
-                                <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
-                            </button> 
-                            <div class="text-3xl lg:text-lg">Доверенность и согласие</div>
-                            <div class="text-lg lg:text-sm py-4">
-                                <ul class="list-disc">
-                                    <li>Доверенность на право пользования и (или) распоряжения имуществом</li>
-                                    <li>Доверенность на право пользования и (или) распоряжения автотранспортными средствами</li>
-                                    <li>Доверенность на право пользования и (или) распоряжения депозитными и иными счетами</li>
-                                    <li>Доверенность на управление имуществом</li>
-                                    <li>Доверенность на управление автотранспортными средствами</li>
-                                    <li>Доверенность на управление депозитными и иными счетами</li>
-                                    <li>Доверенность на сопровождение ребенка/детей за границей или по территории РК</li>
-                                    <li>Доверенность на оформление документов на недвижимость</li>
-                                    <li>Доверенность на оформление и получение пенсии</li>
-                                    <li>Доверенность на прописку гражданина</li>
-                                    <li>Доверенность на получение визы</li>
-                                    <li>Доверенность на представление интересов в государственных, правоохранительных и иных органах</li>
-                                    <li>Доверенность на ведение наследственных дел</li>
-                                    <li>Доверенность на продажу/дарение недвижимости/автотранспортных средств</li>
-                                    <li>Доверенность на ведение гражданских, уголовных, административных дел</li>
-                                    <li>Прочие доверенности, предусмотренные законодательством Республики Казахстан</li>
-                                </ul>
-                                <br>
-                                <ul class="list-disc">
-                                    <li>Согласие супруга на покупку/продажу недвижимости/авто</li>
-                                    <li>Согласие одного родителя на выезд ребенка за границу, на сопровождение детей, на проезд или перелет детей, в том числе без выезда за границу</li>
-                                    <li>Согласие на выезд за границу на ПМЖ</li>
-                                    <li>Согласие на выход из гражданства</li>
-                                    <li>Согласие на усыновление ребенка от родителя</li>
-                                    <li>Согласие на залог недвижимости</li>
-                                    <li>Согласие на приобретения доли</li>
-                                    <li>Согласие на предоставление недвижимости под юридический адрес</li>
-                                    <li>Согласие на временную/постоянную прописку</li>
-                                    <li>Согласие супругов на расторжение брака</li>
-                                    <li>Прочие согласия, отказ от прав, обязательства</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- rights modal -->
+				<div id="rightsModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+					<div class="min-h-full flex items-center justify-center px-3 py-8">
+						<div class="bg-white text-black p-8 relative w-[90%]">
+							<button id="rightsModalClose" class="absolute top-3 right-3 closeModal">
+								<img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+							</button>
+							<div class="text-3xl lg:text-lg">Доверенность и согласие</div>
+							<div class="text-lg lg:text-sm py-4">
+								<ul class="list-disc">
+									<li>Доверенность на право пользования и (или) распоряжения имуществом</li>
+									<li>Доверенность на право пользования и (или) распоряжения автотранспортными средствами</li>
+									<li>Доверенность на право пользования и (или) распоряжения депозитными и иными счетами</li>
+									<li>Доверенность на управление имуществом</li>
+									<li>Доверенность на управление автотранспортными средствами</li>
+									<li>Доверенность на управление депозитными и иными счетами</li>
+									<li>Доверенность на сопровождение ребенка/детей за границей или по территории РК</li>
+									<li>Доверенность на оформление документов на недвижимость</li>
+									<li>Доверенность на оформление и получение пенсии</li>
+									<li>Доверенность на прописку гражданина</li>
+									<li>Доверенность на получение визы</li>
+									<li>Доверенность на представление интересов в государственных, правоохранительных и иных органах</li>
+									<li>Доверенность на ведение наследственных дел</li>
+									<li>Доверенность на продажу/дарение недвижимости/автотранспортных средств</li>
+									<li>Доверенность на ведение гражданских, уголовных, административных дел</li>
+									<li>Прочие доверенности, предусмотренные законодательством Республики Казахстан</li>
+								</ul>
+								<br>
+								<ul class="list-disc">
+									<li>Согласие супруга на покупку/продажу недвижимости/авто</li>
+									<li>Согласие одного родителя на выезд ребенка за границу, на сопровождение детей, на проезд или
+										перелет детей, в том числе без выезда за границу</li>
+									<li>Согласие на выезд за границу на ПМЖ</li>
+									<li>Согласие на выход из гражданства</li>
+									<li>Согласие на усыновление ребенка от родителя</li>
+									<li>Согласие на залог недвижимости</li>
+									<li>Согласие на приобретения доли</li>
+									<li>Согласие на предоставление недвижимости под юридический адрес</li>
+									<li>Согласие на временную/постоянную прописку</li>
+									<li>Согласие супругов на расторжение брака</li>
+									<li>Прочие согласия, отказ от прав, обязательства</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!-- rights modal -->
 
-                <div id="dealsModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-                    <div class="min-h-full flex items-center justify-center px-3 py-8">
-                        <div class="bg-white text-black p-8 relative w-[90%]">
-                            <button id="dealsModalClose" class="absolute top-3 right-3 closeModal">
-                                <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
-                            </button> 
-                            <div class="text-3xl lg:text-lg">Корпоративные сделки</div>
-                            <div class="text-lg lg:text-sm py-4">
-                                <ul class="list-disc">
-                                    <li>Договор купли-продажи, дарения доли или части доли в уставном капитале ТОО</li>
-                                    <li>Право преимущественной покупки</li>
-                                    <li>Договор залога доли или части доли в уставном капитале ТОО</li>
-                                    <li>Иные сделки с долями в уставном капитале ТОО</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- deals modal -->
+				<div id="dealsModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+					<div class="min-h-full flex items-center justify-center px-3 py-8">
+						<div class="bg-white text-black p-8 relative w-[90%]">
+							<button id="dealsModalClose" class="absolute top-3 right-3 closeModal">
+								<img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+							</button>
+							<div class="text-3xl lg:text-lg">Корпоративные сделки</div>
+							<div class="text-lg lg:text-sm py-4">
+								<ul class="list-disc">
+									<li>Договор купли-продажи, дарения доли или части доли в уставном капитале ТОО</li>
+									<li>Право преимущественной покупки</li>
+									<li>Договор залога доли или части доли в уставном капитале ТОО</li>
+									<li>Иные сделки с долями в уставном капитале ТОО</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!-- deals modal -->
 
-                <div id="estateModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-                    <div class="min-h-full flex items-center justify-center px-3 py-8">
-                        <div class="bg-white text-black p-8 relative w-[90%]">
-                            <button id="estateModalClose" class="absolute top-3 right-3 closeModal">
-                                <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
-                            </button> 
-                            <div class="text-3xl lg:text-lg">Сделки с недвижимостью</div>
-                            <div class="text-lg lg:text-sm py-4">
-                                <ul class="list-disc">
-                                    <li>Договор ипотечного жилищного займа</li>
-                                    <li>Договор купли-продажи, дарения, мены недвижимости</li>
-                                    <li>Договор аренда квартиры/ недвижимости</li>
-                                    <li>Оформление (покупка/продажа/дарение) доли квартиры</li>
-                                    <li>Договор ренты</li>
-                                    <li>Договор залога</li>
-                                    <li>Договор дарения недвижимости с иждивением</li>
-                                    <li>Договор отчуждения долей в праве общей собственности (купля-продажа, дарение, мена и так далее), в том числе сособственнику</li>
-                                    <li>Продажа доли земельных участков</li>
-                                    <li>Продажа недвижимого имущества, принадлежащего несовершеннолетнему/ограниченно дееспособному лицу</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- estate modal -->
+				<div id="estateModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+					<div class="min-h-full flex items-center justify-center px-3 py-8">
+						<div class="bg-white text-black p-8 relative w-[90%]">
+							<button id="estateModalClose" class="absolute top-3 right-3 closeModal">
+								<img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+							</button>
+							<div class="text-3xl lg:text-lg">Сделки с недвижимостью</div>
+							<div class="text-lg lg:text-sm py-4">
+								<ul class="list-disc">
+									<li>Договор ипотечного жилищного займа</li>
+									<li>Договор купли-продажи, дарения, мены недвижимости</li>
+									<li>Договор аренда квартиры/ недвижимости</li>
+									<li>Оформление (покупка/продажа/дарение) доли квартиры</li>
+									<li>Договор ренты</li>
+									<li>Договор залога</li>
+									<li>Договор дарения недвижимости с иждивением</li>
+									<li>Договор отчуждения долей в праве общей собственности (купля-продажа, дарение, мена и так далее), в
+										том числе сособственнику</li>
+									<li>Продажа доли земельных участков</li>
+									<li>Продажа недвижимого имущества, принадлежащего несовершеннолетнему/ограниченно дееспособному лицу
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!-- estate modal -->
 
-                <div id="familyModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-                    <div class="min-h-full flex items-center justify-center px-3 py-8">
-                        <div class="bg-white text-black p-8 relative w-[90%]">
-                            <button id="familyModalClose" class="absolute top-3 right-3 closeModal">
-                                <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
-                            </button> 
-                            <div class="text-3xl lg:text-lg">Брак и семья, наследство</div>
-                            <div class="text-lg lg:text-sm py-4">
-                                <ul class="list-disc">
-                                    <li>Брачный договор</li>
-                                    <li>Соглашение о порядке воспитания ребенка/детей</li>
-                                    <li>Определение места жительства ребенка</li>
-                                    <li>Соглашение о порядке осуществления родительских прав</li>
-                                    <li>Соглашение об уплате алиментов бабушкой/дедушкой</li>
-                                    <li>Соглашение об уплате алиментов родителем</li>
-                                    <li>Соглашение о разделе общего имущества, нажитого супругами в период брака</li>
-                                    <br>
-                                    <li>Выдача свидетельства о праве на наследство по закону и по завещанию детям, в том числе усыновленным, супругу, родителям, полнородным братьям и сестрам наследодателя на денежные вклады, средства на счетах в банках, права по закрытым счетам на неполученные пенсии, пособия</li>
-                                    <li>Принятие мер по охране наследственного имущества</li>
-                                    <li>Выдача свидетельства о праве на наследство по закону и по завещанию другим наследникам</li>
-                                    <li>Выдача свидетельства о праве собственности на долю в общем имуществе супругов, выдаваемого пережившему супругу</li>
-                                    <li>Завещание с возложением</li>
-                                    <li>Завещание с исполнением завещания</li>
-                                    <li>Завещания с присутствием наследника</li>
-                                    <li>Завещания с секретным завещанием</li>
-                                    <li>Завещание со свидетелем</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- family modal -->
+				<div id="familyModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+					<div class="min-h-full flex items-center justify-center px-3 py-8">
+						<div class="bg-white text-black p-8 relative w-[90%]">
+							<button id="familyModalClose" class="absolute top-3 right-3 closeModal">
+								<img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+							</button>
+							<div class="text-3xl lg:text-lg">Брак и семья, наследство</div>
+							<div class="text-lg lg:text-sm py-4">
+								<ul class="list-disc">
+									<li>Брачный договор</li>
+									<li>Соглашение о порядке воспитания ребенка/детей</li>
+									<li>Определение места жительства ребенка</li>
+									<li>Соглашение о порядке осуществления родительских прав</li>
+									<li>Соглашение об уплате алиментов бабушкой/дедушкой</li>
+									<li>Соглашение об уплате алиментов родителем</li>
+									<li>Соглашение о разделе общего имущества, нажитого супругами в период брака</li>
+									<br>
+									<li>Выдача свидетельства о праве на наследство по закону и по завещанию детям, в том числе
+										усыновленным, супругу, родителям, полнородным братьям и сестрам наследодателя на денежные вклады,
+										средства на счетах в банках, права по закрытым счетам на неполученные пенсии, пособия</li>
+									<li>Принятие мер по охране наследственного имущества</li>
+									<li>Выдача свидетельства о праве на наследство по закону и по завещанию другим наследникам</li>
+									<li>Выдача свидетельства о праве собственности на долю в общем имуществе супругов, выдаваемого
+										пережившему супругу</li>
+									<li>Завещание с возложением</li>
+									<li>Завещание с исполнением завещания</li>
+									<li>Завещания с присутствием наследника</li>
+									<li>Завещания с секретным завещанием</li>
+									<li>Завещание со свидетелем</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!-- family modal -->
 
-                <div id="securityModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-                    <div class="min-h-full flex items-center justify-center px-3 py-8">
-                        <div class="bg-white text-black p-8 relative w-[90%]">
-                            <button id="securityModalClose" class="absolute top-3 right-3 closeModal">
-                                <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
-                            </button> 
-                            <div class="text-3xl lg:text-lg">Обеспечения доказательств</div>
-                            <div class="text-lg lg:text-sm py-4">
-                                <ul class="list-disc">
-                                    <li>Скриншотов сайтов в сети Интернет переписки в мессенджерах (SMS, Watsapp, Telegram), и в социальных сетях (Instagram, VK) и т.д.</li>
-                                    <li>сведений, порочащих честь, достоинство и деловую репутацию</li>
-                                    <li>нарушений авторских прав</li>
-                                    <li>нарушений прав на использование товарного знака</li>
-                                    <li>нарушений прав на использование патента</li>
-                                    <li>разглашением коммерческой тайны и т.д.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- security modal -->
+				<div id="securityModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+					<div class="min-h-full flex items-center justify-center px-3 py-8">
+						<div class="bg-white text-black p-8 relative w-[90%]">
+							<button id="securityModalClose" class="absolute top-3 right-3 closeModal">
+								<img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+							</button>
+							<div class="text-3xl lg:text-lg">Обеспечения доказательств</div>
+							<div class="text-lg lg:text-sm py-4">
+								<ul class="list-disc">
+									<li>Скриншотов сайтов в сети Интернет переписки в мессенджерах (SMS, Watsapp, Telegram), и в
+										социальных сетях (Instagram, VK) и т.д.</li>
+									<li>сведений, порочащих честь, достоинство и деловую репутацию</li>
+									<li>нарушений авторских прав</li>
+									<li>нарушений прав на использование товарного знака</li>
+									<li>нарушений прав на использование патента</li>
+									<li>разглашением коммерческой тайны и т.д.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!-- security modal -->
 
-                <div id="translateModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-                    <div class="min-h-full flex items-center justify-center px-3 py-8">
-                        <div class="bg-white text-black p-8 relative w-[90%]">
-                            <button id="translateModalClose" class="absolute top-3 right-3 closeModal">
-                                <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
-                            </button> 
-                            <div class="text-3xl lg:text-lg">Апостиль и нотариальные переводы</div>
-                            <div class="text-lg lg:text-sm py-4">
-                                <ul class="list-disc">
-                                    <li>Нотариальные переводы</li>
-                                    <li>Переводы документов с заверением - паспорта, медицинские справки, дипломы, договоры и прочие документы.</li>
-                                    <li>Более 30 языков</li>
-                                    <br>
-                                    <li>Апостилирование документов</li>
-                                    <li>Апостилизация / легализация документов</li>
-                                    <li>Апостилирование копий</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- security modal -->
+				<div id="translateModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+					<div class="min-h-full flex items-center justify-center px-3 py-8">
+						<div class="bg-white text-black p-8 relative w-[90%]">
+							<button id="translateModalClose" class="absolute top-3 right-3 closeModal">
+								<img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+							</button>
+							<div class="text-3xl lg:text-lg">Апостиль и нотариальные переводы</div>
+							<div class="text-lg lg:text-sm py-4">
+								<ul class="list-disc">
+									<li>Нотариальные переводы</li>
+									<li>Переводы документов с заверением - паспорта, медицинские справки, дипломы, договоры и прочие
+										документы.</li>
+									<li>Более 30 языков</li>
+									<br>
+									<li>Апостилирование документов</li>
+									<li>Апостилизация / легализация документов</li>
+									<li>Апостилирование копий</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!-- security modal -->
+			</div> <!-- content container -->
+		</div>
+	</section>
 
-            </div> <!-- content container -->
-        </div>
-    </section>
+	<section id="notaryCallBlock">
+		<div class="container m-auto max-w-[992px] mt-9">
+			<div class="flex flex-row justify-between lg:flex-col">
 
-    <section id="notaryCallBlock">
-        <div class="container m-auto max-w-[992px] mt-9">
-            <div class="flex flex-row justify-between lg:flex-col">
-                <div class="bg-slate-500 w-[370px] h-[300px] py-[24px] px-[30px]">
-                    <div class="font-medium text-[22px]">
-                        Пригласите нотариуса в офис в <span class="font-bold">в удобное время</span>
-                    </div>
-                    <div class="font-normal text-sm mt-3 mb-7">
-                        Выезд нотариуса на дом в офис в Алматы – это услуга, которая позволяет сэкономить ваше время. В частности, если другая сторона сделки может находиться в Алматы только ограниченный период времени.
-                    </div>
-                    <div class="flex flex-row justify-between">
-                        <div class="relative">
-                            <img src="./img/icons/tel.svg" alt="иконка телефона" class="absolute top-[5px] left-[5px]">
-                            <!-- TODO: Убрать выделение при фокусе, добавить бордер-боттом  -->
-                            <input type="tel" class="bg-transparent pl-7 w-[160px]">
-                        </div>
-                        <button>
-                            Пригласить
-                        </button>
-                    </div>
-                </div>
-                <div class="w-[200px]">
-                    <div>
-                        Выезд нотариуса <span>в офис</span>
-                    </div>
-                    <div>
-                        Выезд нотариуса в офис - услуга, пользующаяся спросом у юридических лиц и индивидуальных предпринимателей, которые зачастую просто не могут найти время для визита в нотариальную контору.
-                    </div>
-                </div>
-                <div class="w-[200px]">
-                    <div>
-                        Выезд нотариуса <span>на дом</span>
-                    </div>
-                    <div>
-                        Для многих граждан вызов нотариуса на дом является порой единственной возможностью оформить необходимые документы, не приезжая в нотариальную контору.
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+				<div class="flex flex-col justify-between bg-[#EBC369] max-w-[370px] min-h-[200px] max-h-[350px] py-[24px] px-[30px] lg:max-w-full lg:min-h-full sm:p-4">
+					<div class="font-medium text-[22px] md:text-base">
+						Пригласите нотариуса в офис <span class="font-bold">в удобное время</span>
+					</div>
+					<div class="font-normal text-sm mt-3 mb-7 md:text-xs">
+						Выезд нотариуса на дом в офис в Алматы – это услуга, которая позволяет сэкономить ваше время. В частности,
+						если другая сторона сделки может находиться в Алматы только ограниченный период времени.
+					</div>
+					<div class="flex flex-row justify-between sm:flex-col">
+						<div class="relative">
+							<img src="./img/icons/tel.svg" alt="иконка телефона" class="absolute top-[5px] left-[5px]">
+							<input placeholder="87007007070" minlength="11" maxlength="11" type="tel" class="bg-transparent pl-7 w-[160px] outline-none border-b-[1px] border-[#00000050] pb-1 placeholder-[#00000052]">
+						</div>
+						<div class="relative sm:block">
+							<button class="text-white p-2 bg-[#6991EB] absolute bottom-0 right-0 sm:p-1 sm:text-xs sm:relative sm:mt-3 font-semibold">
+								Пригласить
+							</button>
+						</div>
+					</div>
+				</div>
 
-    <script src="./js/scripts.js"></script>
+				<div class="max-w-[280px] min-h-[200px] max-h-[350px] lg:max-w-[100%] lg:min-h-full bg-[#EBC369] py-[24px] px-[30px] lg:mt-4 sm:p-4">
+					<div class="font-medium text-[22px] md:text-base">
+						Выезд нотариуса <span class="font-bold">в офис</span>
+					</div>
+					<div class="font-normal text-sm mt-3 mb-7 md:text-xs">
+						Выезд нотариуса в офис - услуга, пользующаяся спросом у юридических лиц и индивидуальных предпринимателей,
+						которые зачастую просто не могут найти время для визита в нотариальную контору.
+					</div>
+				</div>
+
+				<div class="max-w-[280px] min-h-[200px] max-h-[350px] lg:max-w-[100%] lg:min-h-full bg-[#EBC369] py-[24px] px-[30px] lg:mt-4 sm:p-4">
+					<div class="font-medium text-[22px] md:text-base">
+						Выезд нотариуса <span class="font-bold">на дом</span>
+					</div>
+					<div class="font-normal text-sm mt-3 mb-7 md:text-xs">
+						Для многих граждан вызов нотариуса на дом является порой единственной возможностью оформить необходимые
+						документы, не приезжая в нотариальную контору.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<script src="./js/scripts.js"></script>
 </body>
 
 </html>
