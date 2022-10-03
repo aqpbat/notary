@@ -110,6 +110,10 @@ function prodScripts(){
   .pipe(dest(options.paths.build.js));
 }
 
+function prodImages(){
+  return src(`${options.paths.src.img}/**/*`).pipe(dest(options.paths.dist.img));
+}
+
 
 function prodClean(){
   console.log("Cleaning build folder for fresh start...");
@@ -133,6 +137,6 @@ exports.default = series(
 
 exports.prod = series(
   prodClean,
-  parallel(prodStyles, prodScripts, prodHTML),
+  parallel(prodImages, prodStyles, prodScripts, prodHTML),
   buildFinish
 );
