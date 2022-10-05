@@ -118,3 +118,13 @@ function showTranslateModal() {
 }
 
 showTranslateModal()
+
+function questionBlockHidden() {  
+  const questionBlock = document.querySelector('.question_block')
+
+  questionBlock.addEventListener('mouseover', () => {
+    questionBlock.classList.toggle('hidden')
+  })
+}
+
+questionBlockHidden()
