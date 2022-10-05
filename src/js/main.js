@@ -119,12 +119,13 @@ function showTranslateModal() {
 
 showTranslateModal()
 
-function questionBlockHidden() {  
-  const questionBlock = document.querySelector('.question_block')
+const accordion = document.getElementsByClassName('question-block')
 
-  questionBlock.addEventListener('mouseover', () => {
-    questionBlock.classList.toggle('hidden')
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener('click', () => {
+    accordion[i].classList.toggle('active')
   })
 }
 
-questionBlockHidden()
+
+// TODO: Добавить evenListener для баттонов приглашения и обратного звонка

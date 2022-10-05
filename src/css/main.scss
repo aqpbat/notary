@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .burger {
   height: 20px;
   position: relative;
@@ -178,4 +182,84 @@
     transform: translate(0px, -100%);
   }
 }
+
+.question-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .question-content {
+    max-width: 992px;
+    .question-block {
+      position: relative;
+      margin-top: 15px;
+      .question-title {
+        position: relative;
+        padding: 15px;
+        padding-right: 45px;
+        background: #6991EB;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .question-title::before {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+      }
+      .answer-text {
+        font-size: 16px;
+        position: relative;
+        background: transparent;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+      }
+    }
+    .question-block.active {
+      .answer-text {
+        height: 100%;
+        padding: 15px;
+      }
+      & .question-title::before {
+        content: '-';
+      }
+    }
+  }
+}
+
+#sendRequestModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+
+#callbackBlock {
+  background: url('../img/callback-bg.jpg') center center/cover no-repeat;
+}
+
+
+
+
+
+
 
