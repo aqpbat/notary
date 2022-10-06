@@ -9,9 +9,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<2aea6ef7-b43f-43c1-b33e-49ff6818e98c>" type="text/javascript"></script>
     <script src="./js/maps.js" type="text/javascript"></script>
-	<title>Нотариус г. Алматы</title>
+    <script src="./js/smtp.js"></script>
+	<title>Нотариус в г. Алматы</title>
 </head>
 
 <body>
@@ -34,7 +42,7 @@
 						<a href="#questionsBlock" class="text-lg lg:text-base">Вопросы</a>
 					</li>
 					<li class="text-center m-0 leading-5 mx-8 lg:mx-4">
-						<a href="#callbackBlock" class="text-lg lg:text-base">Контакты</a>
+						<a href="#contactBlock" class="text-lg lg:text-base">Контакты</a>
 					</li>
 				</ul>
 
@@ -69,7 +77,7 @@
 							</a>
 						</li>
 						<li class="py-4">
-							<a href="#callbackBlock">
+							<a href="#contactBlock">
 								Контакты
 							</a>
 						</li>
@@ -254,7 +262,48 @@
                                 Подробнее
                             </button>
                         </div>
-                    </div>
+                    </div> <!-- item 6 -->
+
+                    <div
+                        class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+                        <div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+                            <img src="./img/icons/mediation.png" alt="иконка медиации"
+                                class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+                        </div>
+                        <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+                            <div class="text-2xl fonе-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+                                Медиация
+                            </div>
+                            <div class="text-sm my-4 md:text-xs sm:text-center">
+                                Альтернативный, внесудебный способ урегулирования спора при содействии независимого посредника – медиатора, который помогает участникам конфликта найти взаимоприемлемое решение.
+                            </div>
+                            <button id="mediationButton"
+                                class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div> <!-- item 7 -->
+
+                    <div
+                        class="flex flex-row justify-between w-[447px] place-items-center mt-6 lg:w-[100%] lg:justify-around sm:flex-col">
+                        <div class="m-0 w-36 h-36 bg-[#6991EB] rounded-full relative">
+                            <img src="./img/icons/otherlegal.png" alt="иконка документы"
+                                class="w-24 h-24 m-auto absolute top-0 bottom-0 right-0 left-0">
+                        </div>
+                        <div class="w-[267px] lg:w-[65%] md:w-[50%] sm:w-[100%]">
+                            <div class="text-2xl fonе-medium lg:text-xl md:text-lg sm:mt-3 sm:text-center">
+                                Иные нотариальные услуги
+                            </div>
+                            <div class="text-sm my-4 md:text-xs sm:text-center">
+                                Также Мы предоставляем и иные виды нотариальных услуг, т.к. составление договоров и соглашении, выдача свидетельства и оформление учредительных документов для юридического лица.
+                            </div>
+                            <button id="othersLegalButton"
+                                class="w-32 h-12 bg-[#6991EB] text-base font-bold text-white block hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4 sm:my-1 sm:m-auto">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div> <!-- item 8 -->
+
                 </div> <!-- content container -->
             </div>
         </section>
@@ -263,24 +312,13 @@
             <div class="container m-auto max-w-[992px] mt-9">
                 <div class="flex flex-row justify-between lg:flex-col">
     
-                    <div class="flex flex-col justify-between bg-[#EBC369] max-w-[370px] min-h-[200px] max-h-[350px] py-[24px] px-[30px] lg:max-w-full lg:min-h-full sm:p-4">
+                    <div class="justify-between bg-[#EBC369] max-w-[370px] min-h-[200px] max-h-[350px] py-[24px] px-[30px] lg:max-w-full lg:min-h-full sm:p-4">
                         <div class="font-medium text-[22px] md:text-base">
                             Пригласите нотариуса в офис <span class="font-bold">в удобное время</span>
                         </div>
                         <div class="font-normal text-sm mt-3 mb-7 md:text-xs">
                             Выезд нотариуса на дом в офис в Алматы – это услуга, которая позволяет сэкономить ваше время. В частности,
                             если другая сторона сделки может находиться в Алматы только ограниченный период времени.
-                        </div>
-                        <div class="flex flex-row justify-between sm:flex-col">
-                            <div class="relative">
-                                <img src="./img/icons/tel.svg" alt="иконка телефона" class="absolute top-[5px] left-[5px]">
-                                <input placeholder="87007007070" minlength="11" maxlength="11" type="tel" class="bg-transparent pl-7 w-[160px] outline-none border-b-[1px] border-[#00000050] pb-1 placeholder-[#00000052]">
-                            </div>
-                            <div class="relative sm:block">
-                                <button id="btnNotaryCall" class="text-white p-2 bg-[#6991EB] absolute bottom-0 right-0 sm:p-1 sm:text-xs sm:relative sm:mt-3 font-semibold">
-                                    Пригласить
-                                </button>
-                            </div>
                         </div>
                     </div>
     
@@ -442,70 +480,49 @@
             </div>
         </section>
     
-        <section id="callbackBlock">
-            <div class="container max-w-[992px] mt-8">
-                <div class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#EBC369] w-96 m-auto pt-6 lg:text-3xl lg:w-[50%] lg:pt-6 text-white">
-                    Закажите обратный звонок
-                </div>
-                <div class="mt-4">
-                    <form action="#">
-                        <div class="flex flex-col justify-evenly place-items-center min-h-[240px]">
-                            <input type="text" class="max-w-[384px] w-96 h-11 p-2 sm:w-[95%] sm:text-sm" placeholder="Введите Ваше имя">
-                            <input type="tel" class="max-w-[384px] w-96 h-11 p-2 sm:w-[95%] sm:text-sm" placeholder="Введите Ваш номер телефона" minlength="11" maxlength="11">
-                            <div>
-                                <button id="btnCallbackOrder" class="w-36 h-12 bg-[#EBC369] text-base font-bold text-white hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4">
-                                    Отправить
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    
-        <section id="contactBlock">   
-            <div class="container max-w-[992px]">
-                <div class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#6991EB] w-96 m-auto mt-8 lg:text-3xl lg:w-48 lg:mt-6">
+        <section id="contactBlock" class="py-6 mt-4">   
+            <div class="container max-w-[992px] text-white">
+                <div class="text-center text-4xl font-bold pb-[12px] border-b-2 border-[#EBC369] w-96 m-auto lg:text-3xl lg:w-48">
                     Контакты и адрес
                 </div>
                 <div class="flex flex-col justify-between mt-6">
                     <div class="flex flex-row justify-between mb-6 place-items-center md:flex-col">
                         <div class="text-lg text-center md:mt-4">
-                            <div class="font-bold">
+                            <div class="font-bold border-b-[1px] border-[#6991EB]">
                                 Телефон:
                             </div>
                             <div class="mt-2">
-                                <a href="tel:87477875905" class="no-underline">
+                                <a href="tel:87477875905" class="no-underline font-semibold">
                                     +7 747 787 59 05
                                 </a>
                             </div>
                             <div class="mt-3">
-                                <a href="tel:87079190915" class="no-underline">
+                                <a href="tel:87079190915" class="no-underline font-semibold">
                                     +7 707 919 09 15
                                 </a>
                             </div>
                         </div>
                         <div class="text-lg text-center md:mt-4">
-                            <div class="font-bold">
+                            <div class="font-bold border-b-[1px] border-[#6991EB]">
                                 Email:
                             </div>
                             <div class="mt-2">
-                                <a href="mailto:z_notarius@bk.ru" class="no-underline">
+                                <a href="mailto:z_notarius@bk.ru" class="no-underline font-semibold">
                                     z_notarius@bk.ru
                                 </a>
                             </div>
                             <div class="mt-3">
-                                <a href="mailto:asnotarius2022@mail.ru" class="no-underline">
+                                <a href="mailto:asnotarius2022@mail.ru" class="no-underline font-semibold">
                                     asnotarius2022@mail.ru
                                 </a>
                             </div>
                         </div>
                         <div class="text-lg text-center w-[33.3%] md:mt-4 md:w-[100%]">
-                            <div class="font-bold">
+                            <div class="font-bold border-b-[1px] border-[#6991EB]">
                                 Адрес:
                             </div>
                             <div class="mt-2">
-                                <a href="https://go.2gis.com/xga2g" target="_blank" class="no-underline">
+                                <a href="https://go.2gis.com/xga2g" target="_blank" class="no-underline font-semibold">
                                     Республика Казахстан, 050009, город Алматы, улица Шевченко, 165Б (уг. ул. Радостовца), БЦ "МТС", 3 этаж, офис 322
                                 </a>
                             </div>
@@ -517,7 +534,7 @@
         </section>
     </main>
 
-    <footer id="footer" class="bg-[#544c3b] mt-12">
+    <footer id="footer" class="bg-[#544c3b]">
         <div class="container max-w-[992px]">
             <div>
                 <a href="index.html" class="text-lg lg:text-base">
@@ -699,22 +716,71 @@
         </div>
     </div> <!-- translate modal -->
 
-    <div id="sendRequestModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
-        <div class="min-h-full flex flex-col items-center justify-center px-3 py-8">
-            <div class="bg-white text-black p-8 relative w-[50%] text-center lg:w-[90%]">
-                <div>
-                    Данные успешно отправлены
-                <br>
-                    Мы перезвоним Вам в рабочее время
+    <div id="mediationModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+        <div class="min-h-full flex items-center justify-center px-3 py-8">
+            <div class="bg-white text-black py-8 px-24 relative w-[90%] md:px-8">
+                <button id="mediationModalClose" class="absolute top-3 right-3 closeModal">
+                    <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+                </button>
+                <div class="text-3xl lg:text-lg">Медиация</div>
+                <div class="text-lg lg:text-sm py-4">
+                    <ul class="list-disc">
+                        <li>Межкорпоративные и внутрикорпоративные споры</li>
+                        <li>Споры в банковской и страховой сфере</li>
+                        <li>Сопровождение проектов, реализация которых затрагивает интересы многих сторон</li>
+                        <li>Конфликты на работе</li>
+                        <li>Семейные споры</li>
+                        <li>Споры, связанные с авторским правом и интеллектуальной собственностью</li>
+                        <li>Медиация в образовании.</li>
+                        <li>ДТП</li>
+                        <li>Межкультурные конфликты, и многое другое.</li>
+                    </ul>
                 </div>
-                <div>
-                    <button id="closeSendRequestModal" class="w-36 h-12 bg-[#EBC369] text-base font-bold text-white hover:bg-[#977a36] transition-all lg:mt-6 lg:mb-4">
-                        OK
-                    </button>
-                </div>    
             </div>
         </div>
-    </div>
+    </div> <!-- mediation modal -->
+
+    <div id="otherLegalModal" class="fixed w-full h-full bg-[#000000cc] top-0 left-0">
+        <div class="min-h-full flex items-center justify-center px-3 py-8">
+            <div class="bg-white text-black py-8 px-24 relative w-[90%] md:px-8">
+                <button id="otherLegalModalClose" class="absolute top-3 right-3 closeModal">
+                    <img src="./img/icons/x-circle.svg" alt="" class="w-7 h-7">
+                </button>
+                <div class="text-3xl lg:text-lg">Иные нотариальные услуги</div>
+                <div class="text-lg lg:text-sm py-4">
+                    <ul class="list-disc">
+                        <li>Договор аренды жилого или нежилого помещения</li>
+                        <li>Договор займа, предмет которого подлежит оценке, в зависимости от суммы сделки</li>
+                        <li>Договор безвозмездного пользования жилого или нежилого помещения</li>
+                        <li>Соглашение об изменении или расторжении любого нотариально удостоверенного договора</li>
+                        <li>Соглашение об определении (выделе) долей</li>
+                        <li>Соглашение об изменении или расторжении ранее заключенных договоров</li>
+                        <li>Договор о суррогатном материнстве</li>                          
+                        <li>Договор мены</li>
+                        <li>Договор поручительства и гарантии</li>
+                        <li>Прочие договора и соглашения, предусмотренные законодательством Республики Казахстан</li>
+                        <br>
+                        <br>
+                        <li>Свидетельство об удостоверении факта нахождения гражданина в живых</li>
+                        <li>Свидетельство о нахождении гражданина в определенном месте</li>
+                        <li>Свидетельство о тождественности гражданина с лицом, изображенным на фотографической карточке</li>
+                        <li>Свидетельство о передаче документов</li>
+                        <li>Свидетельствование подлинности подписи</li>
+                        <li>Свидетельствование копии с подлинности документа</li>
+                        <li>Свидетельствование перевода с одного языка на другой язык</li>
+                        <li>Свидетельствование документов на Апостиль</li>
+                        <li>Свидетельствование подлинности подписи на банковских документах</li>
+                        <li>Свидетельствование о хранении документов и ценных бумаг</li>
+                        <li>Гарантийные обязательства и поручительства</li>
+                        <li>Иные документы, разрешенные законом Республики Казахстан</li>
+                        <br>
+                        <br>
+                        <li>Свидетельство о государственной регистрации, Устав юр. лица.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- others modal -->
 
 	<script src="./js/scripts.js"></script>
 </body>

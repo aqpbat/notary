@@ -119,6 +119,40 @@ function showTranslateModal() {
 
 showTranslateModal()
 
+function showMediationModal() {
+  const showMediationModalButton = document.querySelector('#mediationButton')
+  const mediationModal = document.querySelector('#mediationModal')
+  const closeButton = document.querySelector('#mediationModalClose')
+
+  showMediationModalButton.addEventListener('click', () => {
+    mediationModal.classList.toggle('open')
+  })
+
+  closeButton.addEventListener('click', () => {
+    mediationModal.classList.remove('open')
+  })
+}
+
+showMediationModal()
+
+
+function showOtherLegalModal() {
+  const showOthersLegalModalButton = document.querySelector('#othersLegalButton')
+  const othersLegalModal = document.querySelector('#otherLegalModal')
+  const closeButton = document.querySelector('#otherLegalModalClose')
+
+  showOthersLegalModalButton.addEventListener('click', () => {
+    othersLegalModal.classList.toggle('open')
+  })
+
+  closeButton.addEventListener('click', () => {
+    othersLegalModal.classList.remove('open')
+  })
+}
+
+showOtherLegalModal()
+
+
 const accordion = document.getElementsByClassName('question-block')
 
 for (let i = 0; i < accordion.length; i++) {
@@ -126,6 +160,3 @@ for (let i = 0; i < accordion.length; i++) {
     accordion[i].classList.toggle('active')
   })
 }
-
-
-// TODO: Добавить evenListener для баттонов приглашения и обратного звонка

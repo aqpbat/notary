@@ -183,6 +183,48 @@
   }
 }
 
+#mediationModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
+#otherLegalModal {
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open > div > div {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  & > div > div {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+}
+
 .question-body {
   display: flex;
   justify-content: center;
@@ -253,13 +295,6 @@
 }
 
 
-#callbackBlock {
+#contactBlock {
   background: url('../img/callback-bg.jpg') center center/cover no-repeat;
 }
-
-
-
-
-
-
-
